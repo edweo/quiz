@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  quiz-app:
+    build: .
+    image: quiz-app-image
+    container_name: quiz-app-container
+    ports:
+      - "4444:4444"
+#    volumes:
+#      - ./:/app
+#      - /app/node_modules
